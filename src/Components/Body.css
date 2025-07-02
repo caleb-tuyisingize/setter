@@ -1,0 +1,47 @@
+.body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px);
+}
+.container{
+    text-align: center;
+    color: #fdf5f5;
+    font-size: 32px;
+    font-weight: 700;
+}
+.texts{
+    animation: 4s fadeIn ease-in-out infinite alternate;
+      text-shadow:
+    0 0 5px #ff6b6b,
+    0 0 10px #ff6b6b,
+    0 0 20px #ff6b6b,
+    0 0 40px #ff6b6b,
+    0 0 80px #ff6b6b;
+
+}
+@keyframes fadeIn {
+      0%   { opacity: 1; text-shadow: 0 0 5px #ff6b6b, 0 0 10px #0ff, 0 0 20px #f06595, 0 0 40px #0ff, 0 0 80px #f06595; }
+  5%   { opacity: 0.8; }
+  10%  { opacity: 0.9; }
+  15%  { opacity: 0.7; }
+  20%  { opacity: 1; }
+  100% { opacity: 1; }
+    from {
+        opacity: 0.90;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY();
+    }
+}
+.cta-button{
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #ff6b6b, #f06595);
+    color: #fff;
+    font-weight: 900;
+    cursor: pointer;
+}
